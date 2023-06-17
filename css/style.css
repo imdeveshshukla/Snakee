@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: inline-flex;
+    flex-direction: column;
+}
+.body{
+    background: url("../img/bg2.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 120px;
+    color: green;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 50px;
+    color: green;
+    right: 75px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Girassol', cursive;
+}
+
+#board{
+    background: linear-gradient(rgb(96, 110, 31), rgb(129, 89, 28));
+    width: 95vmin;
+    height: 99vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+}
+
+.head{
+    /* background: url("../images.png"); */
+    background: linear-gradient(rgb(134, 240, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: rgba(161, 7, 7, 0.63);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.arrow {
+    cursor: pointer;
+    border: black 2px solid;
+    border-radius: 10px;
+    display: inline-block;  
+    height: 40px;
+    margin-top: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    line-height: 5.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background: rgba(197, 103, 15, 0.808);
+    color: black;
+    -webkit-touch-callout: none;   /*for not selecting*/
+    -webkit-user-select: none;
+    -khtml-touch-callout: none;
+    -ms-user-select: none;           /* for internet explorer*/    
+    user-select: none;              /* for chrome*/
+     /* &:after {
+      // triangle hover color
+      border-left: 20px solid white;
+    } */
+  }
+  
+  /* .arrow:after {
+    // the triangle
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -20px;
+    right: 0; 
+  } */
+  
+   .arrow:active {
+    background: white;
+    color: black;
+    
+  }
